@@ -59,6 +59,11 @@ a:hover {
 
  /* ----------- Media Queries----------*/
 
+ @media (min-width: 768px){
+    .portfolio-content div {
+        width: 50%
+     }
+ }
  @media (min-width: 1024px) {
      h1,
      .main-nav,
@@ -75,8 +80,3 @@ a:hover {
      }
  }
 
- @media (min-width: 768px){
-    .portfolio-content div {
-        width: 50%
-     }
- }
