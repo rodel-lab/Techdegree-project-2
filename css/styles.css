@@ -6,7 +6,7 @@
 body{
     font-family: 'Rubik', sans-serif;
     color: rgb(102, 100, 100);
-    margin: 3%;
+    margin: 4%;
     
 }
 
@@ -23,12 +23,16 @@ li {
 
 h2 {
     text-transform: uppercase;
+    text-align: center;
+
 }
 
 main-header {
     background: lightgrey;
 }
-
+.contact {
+    text-align: center;
+}
 
 
 /* Pseudo Links */
@@ -46,15 +50,18 @@ a:hover {
     text-align: center;
     padding: 10px;
 }
- 
+header.main-header.clearfix {
+    margin-bottom: 40px;
+}
+
 
 /* ----------- Clear Floats----------*/
-/* .clearfix::after {
+.clearfix::after { 
     content: "";
     display: table;
     clear: both;
   }
-   */
+
 
 
  /* ----------- Media Queries----------*/
@@ -62,8 +69,17 @@ a:hover {
  @media (min-width: 768px){
     .portfolio-content div {
         width: 50%
-     }
- }
+     } 
+    }
+
+ .intro {
+    float: left;
+    width: 35%;
+  }
+  .self-image {
+     float: right;
+     width: 30%;
+  }
  @media (min-width: 1024px) {
      h1,
      .main-nav,
@@ -75,8 +91,8 @@ a:hover {
      }
      li {
        padding: 10px;
+       margin-right: 20px;
        list-style-type: none;
        float: right;
      }
  }
-
