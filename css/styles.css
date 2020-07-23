@@ -24,7 +24,6 @@ li {
 h2 {
     text-transform: uppercase;
     text-align: center;
-
 }
 
 main-header {
@@ -68,43 +67,54 @@ header.main-header.clearfix {
 
  @media (min-width: 768px){
     .portfolio-content div {
-        width: 50%
-     } 
+    width: 50%
+    } 
+    h1,
+    .main-nav {
+    text-align: center; 
     }
-
+    .main-nav li {
+    padding-right: 15px;
+    }
+    .self-image {
+    width: 33%;
+    float: right;
+    }
  .intro {
     float: left;
     width: 35%;
   }
-  .self-image {
-     float: right;
-     width: 30%;
-  }
-
   .footer-name {
     float: left;
     margin: 15px;
-
   }
-
-  .bottom-nav {
-    display: block;  
-  }
-
-
- @media (min-width: 1024px) {
-     h1,
-     .main-nav,
-     .main-nav li { 
-    display: inline;
-     }
-     .portfolio-content div {
-        width: 33%;
-     }
-     li {
-       padding: 10px;
-       margin-right: 20px;
-       list-style-type: none;
-       float: right;
-     }
+  .bottom-nav li {
+    padding-top: 20px;
+    padding-right: 15px;
+    /* margin-right: 20px; */
+    list-style-type: none;
+    float: left;
  }
+    .bottom-nav{
+        float: right;
+    }
+ }
+ @media (min-width: 1024px) {
+    h1,
+    .main-nav,
+    .main-nav li { 
+display: inline;
+    }
+    .portfolio-content div {
+    width: 33%;
+    }
+.main-nav {
+    float: right
+}
+.main-nav li {
+padding: 10px;
+margin-right: 20px;
+list-style-type: none;
+float: left;
+ }
+}
