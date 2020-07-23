@@ -1,4 +1,4 @@
-/* -------  Base Element Styles */
+/* ============ Base Element Styles =========== */
 * {
     box-sizing: border-box;
     
@@ -37,27 +37,57 @@ p {
     font-size: larger;
 }
 
-/* Pseudo Links */
+/* =======Pseudo Links ==========*/
+
 a { text-decoration: none;
 }
 
 a:hover {
     text-decoration: blue;
 }
-.portfolio-content {
+/* =======Layout Styles========= */
+    h1 {
+        padding-bottom {
+           padding-bottom: 12%;
+        }
+    }
+    h1,
+    .main-nav {
+    margin-bottom: 30px;;
+ }
+    .main-nav li {
+    padding-right: 15px;
+ }
+    .self-image {
+    float: right;
+    margin-right: 25px;
+ }
+    .portfolio-content {
     display: flex;
     flex-wrap: wrap;
-}
-.portfolio-content div {
+ }
+    .portfolio-content div {
     text-align: center;
     padding: 10px;
-}
-header.main-header.clearfix {
-    margin-bottom: 40px;
-}
+ }
+  
+    .bottom-nav li {
+    padding-top: 20px;
+    padding-right: 15px;
+    list-style-type: none;
+    float: left;
+ }
+    .footer-name {
+    float: left;
+    margin: 15px;
+ }
+    .bottom-nav{
+     float: right;
+ }
 
 
-/* ----------- Clear Floats----------*/
+/* ==============  Clear Floats =============*/
+
 .clearfix::after { 
     content: "";
     display: table;
@@ -66,58 +96,41 @@ header.main-header.clearfix {
 
 
 
- /* ----------- Media Queries----------*/
+ /* ============  Media Queries ============*/
 
+ 
  @media (min-width: 768px){
-    .portfolio-content div {
-    width: 50%
-    } 
-    h1,
-    .main-nav {
-    text-align: center; 
-    }
-    .main-nav li {
-    padding-right: 15px;
-    }
-    .self-image {
-    width: 33%;
-    float: right;
-    }
- .intro {
-    float: left;
-    width: 35%;
+  .main-nav  {
+  margin-top: 0;
   }
-  .footer-name {
-    float: left;
-    margin: 15px;
-  }
-  .bottom-nav li {
-    padding-top: 20px;
-    padding-right: 15px;
-    /* margin-right: 20px; */
-    list-style-type: none;
-    float: left;
- }
-    .bottom-nav{
-        float: right;
-    }
- }
- @media (min-width: 1024px) {
+  .portfolio-content div {
+  width: 50%
+ }     
+}
+@media (min-width: 1024px) {
     h1,
     .main-nav,
     .main-nav li { 
-display: inline;
+    display: inline;
+    } 
+    h1 {
+        float: left;
+    
     }
     .portfolio-content div {
-    width: 33%;
+    width: 33%
     }
-.main-nav {
-    float: right
-}
-.main-nav li {
-padding: 10px;
-margin-right: 20px;
-list-style-type: none;
-float: left;
+    .main-nav li {
+    padding: 10px;
+    margin-right: 20px;
+    list-style-type: none;
+    float: left;
+     }    
+     .intro {
+        float: left;
+        width: 33%;    
+     }
+     .main-nav {
+        float: right
  }
-}
+  }
