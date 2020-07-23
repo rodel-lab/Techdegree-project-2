@@ -4,7 +4,7 @@
     
 }
 body{
-    font-family: 'Rubik', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     color: rgb(102, 100, 100);
     margin: 4%;
     
@@ -32,7 +32,10 @@ main-header {
 .contact {
     text-align: center;
 }
-
+p {
+    line-height: 1.4;
+    font-size: larger;
+}
 
 /* Pseudo Links */
 a { text-decoration: none;
