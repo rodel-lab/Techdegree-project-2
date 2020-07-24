@@ -94,8 +94,6 @@ a:hover {
     clear: both;
   }
 
-
-
  /* ============  Media Queries ============*/
 
  
@@ -114,8 +112,7 @@ a:hover {
     display: inline;
     } 
     h1 {
-        float: left;
-    
+        float: left;   
     }
     .portfolio-content div {
     width: 33%
@@ -132,5 +129,5 @@ a:hover {
      }
      .main-nav {
         float: right
- }
-  }
+    }
+   }
