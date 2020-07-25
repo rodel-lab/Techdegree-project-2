@@ -1,97 +1,13 @@
-/* ============ Base Element Styles =========== */
-* {
-    box-sizing: border-box;
-    
-}
-body{
-    font-family: 'Josefin Sans', sans-serif;
-    color: rgb(48, 46, 46);
-    margin: 4%;
-    background-color: rgb(184, 240, 240)
-}
 
-img {
-   max-width: 100%;
-}
 
-li {
-    list-style: none;
-    font-weight: 600;
-    text-transform: uppercase;
-    display: inline; 
-} 
-
-h2 {
-    text-transform: uppercase;
-    text-align: center;
-    font-style: oblique;
-    color: rgb(30, 127, 156);
-}
-
-main-header {
-    background: lightgrey;
-}
-
-p {
-    line-height: 1.4;
-    font-size: larger;
-}
-.skills-list li {
-  display: inline;
-  background: rgb(236, 168, 65);
-  padding: 10px;
-  border-radius: 10px;
-
-}
-
-/* =======Pseudo Links ==========*/
-
-a { text-decoration: none;
-}
-
-a:hover {
-    text-decoration: rgb(73, 73, 165);
-}
-/* =======Layout Styles========= */
-   
-    h1 {
-    padding-bottom: 2%;
-    margin-right: auto;
-    }
-    h1,
-    .main-nav {
-    margin-bottom: 30px;;
- }
-    .main-nav li {
-    padding-right: 15px;
- }
-  .bottom-nav li {
-   padding-top: 20px;
-   padding-right: 15px;
-   list-style-type: none;
   }
-    .portfolio-content {
-    display: flex;
-    flex-wrap: wrap;
- }
-    .portfolio-content div {
-    text-align: center;
-    padding: 10px;
- }
- .contact-info {
-    text-align: center;
-  
-    margin: auto;
-}
 .skills-wrap {
   text-align: center;
   margin: 8%;
-  /* margin: auto;   */
-  /* padding-bottom: 30px; */
+  display: inline-block;
 } 
 .skills-list li {
   padding: 15px; 
-  
 }
   
 
@@ -111,6 +27,12 @@ a:hover {
   }
   .name-top {
    text-align: center;
+  }
+  .skills-wrap {
+    text-align: center;
+    margin: auto;
+    display:block;
+
   }
  }
  @media (min-width: 768px){
