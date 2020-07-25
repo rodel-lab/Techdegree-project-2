@@ -4,7 +4,7 @@
     
 }
 body{
-    font-family: 'Montserrat', sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
     color: rgb(102, 100, 100);
     margin: 4%;
     background-color: rgb(135, 238, 238)
@@ -47,6 +47,7 @@ a:hover {
    
     h1 {
     padding-bottom: 2%;
+    margin-right: auto;
     }
     h1,
     .main-nav {
@@ -76,71 +77,86 @@ a:hover {
  /* ========================================*/
  /*           Media Queries                 */
  /* ======================================= */
- 
+ @media (min-width: 320px) {
+  .bottom-nav {
+    display: none;
+  }
+  .main-nav li {
+    display: block;
+    padding-bottom: 20px;
+  }
+  h1, .main-nav li {
+    text-align: center;
+  }
+  .name-top {
+   text-align: center;
+  }
+ }
  @media (min-width: 768px){
     
-    .main-nav  {
-    margin-top: 0;
-  }
-  .main-nav li{
-    display: inline-block; 
-    width: auto;
-    margin-right: 15px;
-    
-  }
-  .main-nav li:last-child {
-    margin-right: 0;
-  }            
-  .self-image {
-    float: right;
-    margin-right: 25px;
-    margin-bottom: 5%;
+.main-nav  {
+margin-top: 0;
+}
+h1,
+.main-nav,
+.main-nav li { 
+display: inline;
+  
+}
+.main-nav {
+float: right
+}    
+
+.self-image {
+float: right;
+margin: auto;
+margin-bottom: 5%;
  }
  .intro {
-    float: left;
-    width: 38%;    
+  float: left;
+  width: 38%;    
  }
-  .portfolio-content div {
+   
+.portfolio-content div {
   width: 50%
  }
+
 .bottom-nav li {
-   float: left;
+  float: left;
 } 
 .bottom-nav{
-    float: right;
+  float: right;
 } 
 .footer-name {
-    float: left;
-    margin: 15px;
+  float: left;
+  margin: 15px;
+ }
+ .to-top {
+  display: none;
  }               
 }
 
-@media (min-width: 1024px) {
-    h1 {
-    float: left;  
-    text-align: left; 
+ @media (min-width: 1024px) {
+  h1 {
+  float: left;  
+  text-align: left; 
   }
   .main-nav {
-    text-align: right;
-  }
-    h1,
-    .main-nav,
-    .main-nav li { 
-    display: inline;
-  }    
-     .main-nav {
-     float: right
+  text-align: right;
+  } 
+  .main-nav {
+  float: right
   }
   .main-nav li {
-    padding: 10px;
-    margin-right: 20px;
-    list-style-type: none;
-    float: left;
- } 
-    .portfolio-content div {
-    width: 33%
-  }    
-}
+  padding: 10px;
+  margin-right: 20px;
+  list-style-type: none;
+  float: left;
+ }
+  .portfolio-content div {
+  width: 33%
+  }   
+} 
 /* ==============  Clear Floats =============*/
 
 .clearfix::after { 
