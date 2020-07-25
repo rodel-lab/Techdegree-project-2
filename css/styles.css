@@ -77,7 +77,7 @@ a:hover {
  /* ========================================*/
  /*           Media Queries                 */
  /* ======================================= */
- @media (min-width: 320px) {
+ @media (min-width: 320px) and (max-width: 767px){
   .bottom-nav {
     display: none;
   }
