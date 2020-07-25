@@ -91,7 +91,12 @@ a:hover {
 .skills-list li {
   padding: 15px; 
 }
-  
+
+.footer-name {
+  float: left;
+  margin: auto;
+  font-size: 3.0vh;  
+}
 
  /* ========================================*/
  /*           Media Queries                 */
@@ -114,11 +119,12 @@ a:hover {
     text-align: center;
     margin: auto;
     display:block;
-
   }
- }
+}
  @media (min-width: 768px){
-    
+  .to-top {
+  display: none;
+  }  
 .main-nav  {
 margin-top: 0;
 }
@@ -151,14 +157,11 @@ margin-bottom: 5%;
 } 
 .bottom-nav{
   float: right;
-} 
-.footer-name {
+ } 
+ .footer-name {
   float: left;
   margin: 15px;
- }
- .to-top {
-  display: none;
- }               
+ }                         
 }
 
  @media (min-width: 1024px) {
@@ -180,7 +183,8 @@ margin-bottom: 5%;
  }
   .portfolio-content div {
   width: 33%
-  } 
+  
+   }
 } 
 /* ==============  Clear Floats =============*/
 
